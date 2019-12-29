@@ -17,7 +17,7 @@ describe './lib/greeting.rb' do
 
       output = capture_puts{ greeting("Sally") }
 
-      expect(output).to include("Hello Sally.It's nice to meet you.")
+      expect(output).to include("Hello Sally. It's nice to meet you.")
     end
 
     it 'greets the person with additional whitespace removed' do
@@ -28,7 +28,7 @@ describe './lib/greeting.rb' do
       # puts adds a newline to the output. Without using print, students
       # will not be able to remove the \n character at the end of the phrase
       # Strip is being used on the output for this purpose
-      expect(output.strip).to eq("Hello Sally.It's nice to meet you.")
+      expect(output.strip).to eq("Hello Sally. It's nice to meet you.")
     end
   end
 end
